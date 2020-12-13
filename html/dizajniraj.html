@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Vans</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <script src='../script/dizajniraj.js'></script>
+  <link href="../css/dizajniraj.css" rel="stylesheet">
+  
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#myPage">VANS</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="pocetna.html">POČETNA</a></li>
+        <li><a href="patike.html">PATIKE</a></li>
+        <li><a href="odeca.html">ODEĆA</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="jumbotron vrhStrane">
+    <div class="text-center naslov">
+        <h1 class="naslov-tekst">
+            <span class="red">D</span><span class="blue">I</span><span class="green">Z</span><span class="pink">A</span><span class="yellow">J</span><span class="purple">N</span><span class="orange">I</span><span class="pink">R</span><span class="green">A</span><span class="cyan">J</span>  
+            <span class="yellow">S</span><span class="red">V</span><span class="pink">O</span><span class="green">J</span>
+            <br>
+            <span class="blue">V</span><span class="red">A</span><span class="orange">N</span><span class="purple">S</span>
+        </h1> 
+        <p class="naslov-tekst">"OFF THE WALL"</p> 
+    </div>
+</div>
+
+<!-- Uvod -->
+<div  class="container-fluid ">
+    <div class="row uvod">
+    <h2 class="text-center">POKAŽI SVIMA SVOJU KREATIVNOST</h2><br>
+    <h4>VANS ti nudi idealnu priliku! Dizajniraj patike iz svojih snova i ostvari još nečije snove! Svakog novembra VANS oragnizuje nagradnu igru, gde se svi modeli dizajnirani od strane naših potrošača čuvaju i zatim učestvuju u VELIKOJ nagradnoj igri! U toku poslednje nedelje novembra organizuje se glasanje i model sa najviše glasova biće dostupan u prodaji u januaru, a pobednika čekaju vredne nagrade!</h4>
+    </div>
+</div>
+
+<!-- crno beli okvir -->
+<div class="container-fluid bw-bg"></div>
+
+<!-- Forma -->
+<div id="formaID" class="container-fluid text-center">
+    <div class="row">
+        <div class="col-sm-6">
+            <h2>OSNOVNI MODEL</h2>
+            <br>
+            <img id="osnModelID" src="../img/vans_osn_model.png">        
+        </div>
+        <div class="col-sm-6">
+            <form class="forma">
+                
+                <div class="row">
+                    <div class="col-sm-4 text-right">ime i prezime</div>
+                    <div class="col-sm-8 form-group">
+                        <input class="form-control" id="name" name="name" placeholder="Ime i prezime" type="text" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4 text-right">email</div>
+                    <div class="col-sm-8 form-group">
+                        <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4 text-right">adresa</div>
+                    <div class="col-sm-8 form-group">
+                        <input class="form-control" id="adr" name="adr" placeholder="Adresa" type="text" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4 text-right">broj patika</div>
+                    <div class="col-sm-8 form-group">
+                        <select class="custom-select form-control" id="br" name="br" required>
+                            <option value="" selected disabled>izaberi...</option>
+                            <option value="36">36</option>
+                            <option value="37">37</option>
+                            <option value="38">38</option>
+                            <option value="39">39</option>
+                            <option value="40">40</option>
+                            <option value="41">41</option>
+                            <option value="42">42</option>
+                            <option value="43">43</option>
+                            <option value="44">44</option>
+                            <option value="45">45</option>
+                            <option value="46">46</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <fieldset>
+                        <legend>
+                          Odaberi materijal
+                        </legend>
+                        <input type="radio" name="materijal" class="sr-only" id="bele" checked>
+                        <label for="bele">
+                          <img class="materijal" src="../img/mat_belo.jpg" alt="bele">
+                        </label>
+                        <input type="radio" name="materijal" class="sr-only" id="karo">
+                        <label for="karo">
+                          <img class="materijal" src="../img/mat_bw.jpg" alt="karo">
+                        </label>
+                        <input type="radio" name="materijal" class="sr-only" id="teksas">
+                        <label for="teksas">
+                          <img class="materijal" src="../img/mat_teksas.jpg" alt="teksas">
+                        </label>
+                      </fieldset>
+                </div>
+                <div class="row">
+                    <fieldset>
+                        <legend>
+                          Odaberi đon
+                        </legend>
+                        <input type="radio" name="djon" class="sr-only" id="belo" checked>
+                        <label for="belo">
+                          <img class="djon" src="../img/djon_bela.jfif" alt="belo">
+                        </label>
+                        <input type="radio" name="djon" class="sr-only" id="crna">
+                        <label for="crna">
+                          <img class="djon" src="../img/djon_crna.jfif" alt="crna">
+                        </label>
+                        <input type="radio" name="djon" class="sr-only" id="plava">
+                        <label for="plava">
+                          <img class="djon" src="../img/djon_plava.png" alt="plava">
+                        </label>
+                        <input type="radio" name="djon" class="sr-only" id="roze">
+                        <label for="roze">
+                          <img class="djon" src="../img/djon_roze.jpg" alt="roze">
+                        </label>
+                        <input type="radio" name="djon" class="sr-only" id="zelena">
+                        <label for="zelena">
+                          <img class="djon" src="../img/djon_zelenajpg.jpg" alt="zelena">
+                        </label>
+                        <input type="radio" name="djon" class="sr-only" id="zuta">
+                        <label for="zuta">
+                          <img class="djon" src="../img/djon_zuta.jfif" alt="zuta">
+                        </label>
+                      </fieldset>
+                </div>
+                <div class="row">
+                    <fieldset>
+                        <legend>
+                          Odaberi stikere - moguća je kombinacija više različitih!
+                        </legend>
+                        <input type="checkbox" name="print" class="sr-only" multiple id="duga">
+                        <label for="duga">
+                          <img class="print" src="../img/print_duga.jpg" alt="duga">
+                        </label>
+                        <input type="checkbox" name="print" class="sr-only" multiple id="krofna">
+                        <label for="krofna">
+                          <img class="print" src="../img/print_krofna.jpg" alt="krofna">
+                        </label>
+                        <input type="checkbox" name="print" class="sr-only" multiple id="lobanja">
+                        <label for="lobanja">
+                          <img class="print" src="../img/print_lobanja.png" alt="lobanja">
+                        </label>
+                        <input type="checkbox" name="print" class="sr-only" multiple id="srce">
+                        <label for="srce">
+                          <img class="print" src="../img/print_srce.jpg" alt="srce">
+                        </label>
+                        <input type="checkbox" name="print" class="sr-only" multiple id="suncokret">
+                        <label for="suncokret">
+                          <img class="print" src="../img/print_suncokret.jpg" alt="suncokret">
+                        </label>
+                      </fieldset>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 form-group">
+                        <button class="btn btn-default pull-right" type="submit">Potvrdi</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<!-- crno beli okvir -->
+<div class="container-fluid bw-bg"></div>
+
+
+<footer class="container-fluid text-center">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+  <br>
+  <img id="vansImgFooterID" src="../img/vans_logo_footer.jpg">
+</footer>
+
+</body>
+</html>

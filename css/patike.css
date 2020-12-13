@@ -1,0 +1,105 @@
+body {
+    font: 400 15px Lato, sans-serif;
+    line-height: 1.8;
+    color: #818181;
+}
+h2 {
+    font-size: 24px;
+    color: black;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.vansImg{
+    width: 400px;
+}
+
+.tekst-link{
+    font-weight: bold;
+    cursor: pointer;
+    color: black;
+}
+.jumbotron {
+    color: rgb(0, 255, 157);
+    padding-top: 80px;
+    font-family: Montserrat, sans-serif;
+    height: 250px;
+}
+.patikecover{
+    background-image: url("../img/vans_patike.jpg");
+    background-repeat: repeat;
+}
+.naslov{
+    background-color: rgba(0,0,0, 0.8);
+    width: 600px;
+    margin-left: calc(50% - 300px);
+}
+.naslov-tekst{
+    font-weight: bolder;
+}
+
+.container-fluid {
+    padding: 60px 150px;
+}
+
+.thumbnail{
+    background-color: black;
+}
+
+.patikeSlika:hover{
+    cursor: zoom-in;
+    transform: scale(1.15);
+}
+
+p{
+    color: white;
+}
+
+.navbar {
+    margin-bottom: 0;
+    background-color: rgba(0,0,0, 0.8);
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+    font-family: Montserrat, sans-serif;
+}
+
+.navbar li a, .navbar .navbar-brand {
+    color: #fff !important;
+}
+.navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #f4511e !important;
+    background-color: #fff !important;
+}
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+}
+footer .glyphicon {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #f4511e;
+}
+
+#vansImgFooterID{
+    width: 150px;
+}
+
+@media screen and (max-width: 768px) {
+    .col-sm-2 {
+        text-align: center;
+        margin: 25px 0;
+    }
+    .btn-lg {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .logo {
+        font-size: 150px;
+    }
+}

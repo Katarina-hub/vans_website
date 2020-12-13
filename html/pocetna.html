@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Vans</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <script src='../script/pocetna.js'></script>
+  <link href="../css/pocetna.css" rel="stylesheet">
+  
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#myPage">VANS</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about">O NAMA</a></li>
+        <li><a href="#ponudaID">PONUDA</a></li>
+        <li><a href="#aktuelnoID">AKTUELNO</a></li>
+        <li><a href="#kontaktID">KONTAKT</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="jumbotron zebra">
+    <div class="text-center naslov">
+        <h1 class="naslov-tekst">VANS</h1> 
+        <p class="naslov-tekst">"OFF THE WALL"</p> 
+    </div>
+</div>
+
+<!--O nama -->
+<div id="about" class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8">
+      <h2>O našoj kompaniji</h2><br>
+      <h4>Sedište naše kompanije nalazi se u Americi, Anaheim Kalifornija. Od 1966. godine proizvodimo skejtbord patike i VANS opremu. 
+          Poznati smo po jedinstvenom dizajnu i inovativnim motivima. </h4>
+      <h4>Zalažemo se za kontrakulturu, negujemo individualnost mladih. 
+          Cenimo i vrednujemo kreativnost, i nudimo korisnicima mogućnost da sami kreiraju svoj dizajn! 
+          Isprobaj svoj dizajn <a class="tekst-link" href="dizajniraj.html">ovde.</a></h4>
+    </div>
+    <div class="col-sm-4">
+        <img class="vansImg" src="../img/vans.jpg">
+    </div>
+  </div>
+</div>
+
+<!-- Ponuda -->
+<div id="ponudaID" class="container-fluid text-center">
+  <h2>PONUDA</h2>
+  <br>
+  <div class="row slideanim">
+    <div class="col-sm-4">
+        <img onclick="prikaziPatike()" class="ponuda_slika" src="../img/patike.jpg">
+        <a class="naziv_ponude" href="patike.html">PATIKE</a>
+    </div>
+    <div class="col-sm-4">
+        <img onclick="prikaziOdecu()" class="ponuda_slika" src="../img/vans_odeca1.jpg">
+        <a class="naziv_ponude" href="odeca.html">ODEĆA</a>
+    </div>
+    <div class="col-sm-4">
+        <img onclick="prikaziDizajniraj()" class="ponuda_slika" src="../img/dizajniraj.jpg">
+        <a class="naziv_ponude" href="dizajniraj.html">DIZAJNIRAJ</a>
+    </div>
+  </div>
+</div>
+
+
+<!-- Aktuelno -->
+<div id="aktuelnoID" class="container-fluid">
+    <div class="text-center">
+        <h2>AKTUELNO</h2>
+    </div>
+  
+    <div class="slideshow-container">
+
+        <div class="mySlides">
+            <img class="slika_galerija" src="../img/aktuelno1.jpg">
+        </div>
+        
+        <div class="mySlides">
+            <img class="slika_galerija" src="../img/aktuelno2.jpg">
+        </div>
+        
+        <div class="mySlides">
+            <img class="slika_galerija" src="../img/aktuelno3.jpg">
+        </div>
+        
+        <div class="mySlides">
+          <img class="slika_galerija" src="../img/aktuelno4.jpg">
+        </div>
+        
+        <div class="mySlides">
+            <img class="slika_galerija" src="../img/aktuelno5.jpg">
+        </div>
+        
+        <div class="mySlides">
+            <img class="slika_galerija" src="../img/aktuelno6.jpg">
+        </div>
+
+        <div class="mySlides">
+          <img class="slika_galerija" src="../img/aktuelno7.jpg">
+        </div>
+        
+        <a class="prev" id="previD">&#10094;</a>
+        <a class="next" id="nextiD">&#10095;</a>
+    
+    </div>
+    <br>
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+        <span class="dot" onclick="currentSlide(4)"></span> 
+        <span class="dot" onclick="currentSlide(5)"></span> 
+        <span class="dot" onclick="currentSlide(6)"></span> 
+        <span class="dot" onclick="currentSlide(7)"></span> 
+    </div>
+</div>
+
+<!-- Kontakt -->
+<div id="kontaktID" class="container-fluid bg-grey">
+  <h2 id="kontaktNaziv" class="text-center">KONTAKT</h2>
+  <div class="row">
+    <div class="col-sm-5">
+      <p><span class="glyphicon glyphicon-map-marker"></span> Beograd, Knez Mihailova, Rabrovac 11412</p>
+      <p><span class="glyphicon glyphicon-phone"></span> +381 11 262 1751</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> vanssrbija@gmail.com</p>
+    </div>
+    <div class="col-sm-7 slideanim">
+        <form>
+            <div class="row">
+                <div class="col-sm-6 form-group">
+                    <input class="form-control" id="name" name="name" placeholder="Ime i prezime" type="text" required>
+                </div>
+                <div class="col-sm-6 form-group">
+                    <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+                </div>
+            </div>
+            <textarea class="form-control" id="comments" name="comments" placeholder="Komentar" rows="5" required></textarea><br>
+            <div class="row">
+                <div class="col-sm-12 form-group">
+                    <button class="btn btn-default pull-right" type="submit">Pošalji</button>
+                </div>
+            </div>
+        </form>
+    </div>
+  </div>
+</div>
+
+<footer class="container-fluid text-center">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+  <br>
+  <img id="vansImgFooterID" src="../img/vans_logo_footer.jpg">
+</footer>
+
+</body>
+</html>
